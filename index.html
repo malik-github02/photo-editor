@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Editor</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="image">
+            <img alt="image">
+            <canvas id="canvas"></canvas>
+            <div class="upload">
+                <label for="upload">
+                    Upload Photo
+                </label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        <div class="contraller">
+            <label for="stat">Staturate</label>
+            <input type="range" name="stat" id="stat" min="0" max="100" value="100">
+            <label for="contrast">Contrast</label>
+            <input type="range" name="contrast" id="contrast" min="0" max="100" value="20">
+            <label for="bright">Brightness</label>
+            <input type="range" name="bright" id="bright" min="0" max="100" value="100">
+            <label for="sepia">Sepia</label>
+            <input type="range" name="sepia" id="sepia" min="0" max="100" value="0">
+            <label for="gray">Grayscale</label>
+            <input type="range" name="gray" id="gray" min="0" max="100" value="0">
+            <label for="blur">Blur</label>
+            <input type="range" name="blur" id="blur" min="0" max="100" value="0">
+            <label for="rotate">Hue Rotate</label>
+            <input type="range" name="rotate" id="rotate" min="0" max="100" value="0">
+            <div class="buttons">
+                <button class="reset">Reset</button>
+                <a download="" href="#" class="download">Download</a>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
